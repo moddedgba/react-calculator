@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Add from "./Add.js";
+import Substract from "./Substract.js";
+import Multiply from "./Multiply.js";
+import Divide from "./Divide.js"
+import ResetInput from "./ResetInput.js";
+import ResetResult from "./ResetResult.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Simplest Working Calculator</h1>
+      <p></p>
+      <Add />
+      <Substract />
+      <Multiply />
+      <Divide />
+      <ResetInput />
+      <ResetResult />
     </div>
   );
 }
